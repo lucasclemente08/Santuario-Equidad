@@ -1,0 +1,19 @@
+
+@import "./vars.scss";
+
+
+footer{
+    background-color: $footer-background;
+    
+
+    &-content{
+      
+        color: $footer-text-color;
+    } 
+
+
+    a{
+        color: $footer-link-color;
+    }
+
+}
