@@ -1,3 +1,134 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +168,18 @@ hr {
     margin: 0;
 }
 
+footer {
+    background-color: #303229;
+}
+
+footer-content {
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
 .nav-links {
     text-decoration: none;
     list-style: none;
@@ -74,7 +217,6 @@ main {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     z-index: 3;
-
 }
 
 .text-carousel {
@@ -303,6 +445,7 @@ article {
     background-color: #005007;
     background-image: linear-gradient(132deg, #5e9159 4%, #036f0c 100%);
     transition: all 0.2s ease;
+    color: #fff;
 }
 
 
@@ -377,6 +520,7 @@ input {
 .button-submit:hover {
     background-color: #2c4e30;
     transition: all 0.2s ease;
+    color: #fff;
 }
 
 .button-reset {
@@ -457,11 +601,13 @@ textarea {
     background-color: #519259;
     border-radius: 20px solid;
     padding: 0.5rem;
+
 }
 
 .volunteer-btn :hover {
     background-color: #3f623b;
     transition: all 0.2s ease;
+    color: #fff;
 }
 
 /* Volunteer page */
@@ -581,10 +727,8 @@ textarea {
 /* FOOTER */
 footer {
     background-color: #303229;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
 }
+
 
 .footer-content {
     display: flex;
@@ -621,6 +765,7 @@ footer {
 .footer-contact a:hover {
     background-color: #519259;
     transition: all 0.2s ease;
+    color: #fff;
 }
 
 .footer-title {
@@ -650,10 +795,16 @@ footer {
     margin: 1rem;
     flex-flow: row wrap;
     align-content: center;
-    text-align: center;
+    justify-content: center;
     color: #fff;
     list-style: none;
     text-decoration: none;
+}
+
+.footer-help a:hover {
+    background-color: #519259;
+    color: #fff;
+    transition: all 0.2s ease;
 }
 
 .footer-about a {
@@ -669,6 +820,7 @@ footer {
 .rigths {
     background-color: #303229;
     display: flex;
+
     color: #fff;
     justify-content: center;
     padding: 1rem;
@@ -903,7 +1055,7 @@ hr {
     background-color: #519259;
 }
 
-.cards {
+.cards-adoptar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     grid-gap: 1rem;
@@ -914,7 +1066,7 @@ hr {
     text-align: center;
 }
 
-.card {
+.card-adoptar {
     background-color: #3f623b;
     border-radius: 1rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
@@ -938,7 +1090,7 @@ hr {
     padding: .3rem
 }
 
-.card-button a {
+.card-button-adoptar a {
     display: inline-block;
     justify-content: center;
     background-color: #82954B;
@@ -950,11 +1102,11 @@ hr {
 
 }
 
-.card-button a:hover {
+.card-button-adoptar a:hover {
     background-color: #9fa757;
 }
 
-.card-img img {
+.card-img-adoptar img {
 
     padding: .1rem;
     border-radius: 2rem;
@@ -1011,6 +1163,7 @@ hr {
         display: flex;
         flex-direction: row;
     }
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -1019,10 +1172,12 @@ hr {
     .custom-shape-divider-bottom-1652829294 {
         display: none;
     }
+
     .contact-section {
 
         margin-bottom: 5rem;
     }
+
     .grid-container {
         display: grid;
         grid-area: column "header"
@@ -1030,6 +1185,7 @@ hr {
             "article"
             "footer";
     }
+
     main,
     .hero-container {
         display: flex;
@@ -1041,10 +1197,12 @@ hr {
         display: flex;
         flex-flow: row;
     }
+
     .hero-button a {
         padding: 1rem;
 
     }
+
     .footer-contact {
         display: none;
     }
@@ -1056,6 +1214,7 @@ hr {
     }
 
     @media (max-width:370px) {
+
         .history-img-horse img,
         .history-img img {
             width: 200px;

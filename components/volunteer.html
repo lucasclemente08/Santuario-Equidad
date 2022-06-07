@@ -16,29 +16,38 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/others.css">
     <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 
 <body>
 
     <!-- NAV BAR -->
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand logo">
+                <img src="../assets/logo.svg" href="index.html" class="d-inline-block align-text-top" alt="images">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-links ">
 
-    <header class="nav-bar">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../assets/logo.svg" href="index.html" alt=""></a>
+                    <li><a href="./about-us.html">Nosotros</a></li>
+                    <li><a href="donate.html">Donar</a></li>
+                    <li><a href="./apadrinar.html">Apadrinar</a></li>
+                    <li><a href="./volunteer.html">Voluntariado</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul class="nav-links">
-
-                <li><a href="./about-us.html">Nosotros</a></li>
-                <li><a href="./apadrinar.html">Apadrinar</a></li>
-                <li><a href="./donate.html">Donar</a></li>
-                <li><a href="volunteer.html">Voluntariado</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
     <!-- VOLUNTARIADO -->
 
@@ -49,10 +58,10 @@
                 <p>Hay posiciones de voluntariado abiertas todo el año</p>
             </div>
             <div class="hero-button">
-                <a href="./components/about-us.html">Nosotros!
+                <a href="./about-us.html">Nosotros!
                     <i class="uil uil-angle-double-right"></i>
                 </a>
-                <a href="./components/donate.html">Donar
+                <a href="./donate.html">Donar
                     <i class="uil uil-heart"></i>
                 </a></div>
 
@@ -127,7 +136,7 @@
                 </li>
             </ul>
         </div>
-        <img src="../assets/waves.svg" alt="">
+        <img src="../assets/waves.svg" alt="images">
 
     </section>
 
@@ -171,8 +180,9 @@
     <!-- FOOTER -->
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-contact">
+        <div class="footer-content border-bottom">
+
+            <div class="footer-contact" data-aos="fade-up-left" data-aos-duration="2000">
                 <div class="footer-title">
                     <h3>Contacto</h3>
                 </div>
@@ -182,43 +192,59 @@
                 <a
                     href="https://www.google.com/maps/place/Santuario+Equino+EQUIDAD/@-30.6951357,-64.8459897,15z/data=!4m2!3m1!1s0x0:0x72fa3f3345c1b554?sa=X&ved=2ahUKEwj78f-jl973AhV-vJUCHY_4Ar0Q_BJ6BAhbEAU">Lugar
                     <i class="uil uil-location-point"></i></a>
+
             </div>
-            <div class="footer-social-media">
+            <div class="footer-social-media" data-aos="fade-down" data-aos-duration="2000">
                 <div class="footer-title">
                     <h3>Seguinos en</h3>
                 </div>
                 <ul class="wrapper">
                     <li class="icon facebook">
                         <span class="tooltip">Facebook</span>
-                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><a href="https://www.facebook.com/SantuarioEquidad"><i
+                                    class="fab fa-facebook-f"></i></a></span>
                     </li>
                     <li class="icon instagram">
                         <span class="tooltip">Instagram</span>
-                        <span><i class="fab fa-instagram"></i></span>
+                        <span><a href="https://www.instagram.com/santuarioequidad/"><i
+                                    class="fab fa-instagram"></i></a></span>
                     </li>
 
                     <li class="icon youtube">
                         <span class="tooltip">Youtube</span>
-                        <span><i class="fab fa-youtube"></i></span>
+                        <span><a href="https://www.youtube.com/channel/UC6ISluyfSqt8AAE6wCAWhEA"><i
+                                    class="fab fa-youtube"></i></a></span>
                     </li>
                 </ul>
             </div>
-            <div class="footer-help">
+            <div class="footer-help" data-aos="fade-up-right" data-aos-duration="1000">
                 <div class="footer-title">
                     <h3>¿Cómo ayudar?</h3>
                 </div>
-                <li><a href="./components/donate.html">Donar</a></li>
-                <li><a href="./components/volunteer.html">Voluntariado</a></li>
-                <li><a href="./components/contact.html">Contacto</a></li>
+                <a href="../components/donate.html">Donar</a>
+                <a href="../components/volunteer.html">Voluntariado</a>
+                <a href="#contact">Contacto</a>
 
             </div>
+        </div>
+        <hr>
+        <div class="rigths">
+            <p class=""> © 2022 Lucas Clemente. All rights reserved</p>
+        </div>
+
     </footer>
 
-    <hr>
-    <div class="rigths">
-        <p class=""> © 2022 Lucas Clemente. All rights reserved</p>
     </div>
 
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
